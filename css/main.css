@@ -1,0 +1,126 @@
+html, body {
+    height: 100%
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: rgb(55, 51, 58);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lavenderblush;
+    background-image: url(../images/starbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.776);
+}
+
+#mainheader {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 120px;
+    width: 100%;
+    border: none;
+    background: rgb(148,187,233);
+    background: radial-gradient(circle, rgba(148,187,233,1) 0%, rgba(207,171,238,1) 53%, rgba(125,59,181,1) 100%);
+}
+
+img {
+    padding: 0 50px;
+}
+
+section {
+    width: 400px;
+    border: 4px solid;
+    border-radius: 8px;
+    margin: 10px 12px; /* top/bottom left/right*/
+}
+section > h2 {
+    color: rgba(207,171,238,1);
+    padding: 4px 8px;
+    text-transform: uppercase;
+}
+
+section:first-of-type {
+    border: 4px solid rgb(148,187,233);
+}
+
+#todo h2 {
+    color: rgb(148,187,233);
+}
+
+#inprogress {
+    border: 4px solid rgba(207,171,238,1);
+}
+
+section:last-of-type {
+    border: 4px solid rgba(125,59,181,1)
+}
+
+#done h2 {
+    color: rgba(125,59,181,1)
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 6px 8px;
+}
+
+.todo li:nth-child(odd) {
+    background-color: rgb(148,187,233);
+    color:rgb(55, 51, 58);
+}
+
+.inprogress li:nth-child(odd) {
+    background-color: rgba(207,171,238,1);
+    color:rgb(55, 51, 58);
+}
+
+.done li:nth-child(odd) {
+    background-color: rgba(125,59,181,1);
+    color:rgb(28, 26, 29);
+}
+
+h2::after {
+    content:"🖤";
+    margin-left: 5px
+}
+
+input[type="checkbox"]:checked + span::after {
+    content: "🖤";
+}
+
+/*this id for drop downs*/
+
+details {
+    width: 400px;
+    border: 4px solid rgb(160, 135, 240);
+    border-radius: 8px;
+    margin: 10px 12px;
+}
+
+summary {
+    background-color: rgb(160, 135, 240);
+    padding: 10px;
+}
+
+details h3 {
+    padding: 0px 20px;
+}
+
+details p {
+    padding: 0px 20px;
+}
