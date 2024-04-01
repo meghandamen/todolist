@@ -1,5 +1,5 @@
 # Meghan_damen_todolist
-my to do list build for hw5 css styling
+my to do list build for hw3 css styling
 
 ## installation
 No installation required
